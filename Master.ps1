@@ -2,7 +2,7 @@ $date = get-date -f yyyy-MM-dd
 
 .\speedtest.exe --format=json-pretty > "Results\results_$($date).json"
 
-$path = "\\VTN-FS01\4TB Shared\Programming\SpeedTest CLI"
+$path = "Your Path"
 
 $data = Get-Content -Raw -Path "$($Path)\Results\results_$($date).json" | ConvertFrom-Json
 
